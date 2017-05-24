@@ -13,8 +13,11 @@ p-lifecycle-connected     // connectedCallback()
 p-lifecycle-disconnected  // disconnectedCallback()
 p-lifecycle-attrchanged   // attributeChangedCallback()
 p-lifecycle-ready         // Polymer specific ready()
-p-dispatchevent           // this.dispatchEvent();
+p-dispatchevent           // Fire custom event with this.dispatchEvent();
+p-dispatchevent-composed  // Fire custom event through ShadowDOM
 p-observers               // Polymer static get observers()
+p-property-basic          // Polymer property w/type + default value
+p-property-all            // Polymer property with everything
 ```
 
 ### HTML Snippets

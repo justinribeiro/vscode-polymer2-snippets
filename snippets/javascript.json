@@ -19,6 +19,12 @@
       "",
       "\tready() {",
       "\t\tsuper.ready();",
+      "",
+      "\t\t// When possible, use afterNextRender to defer non-critical",
+      "\t\t// work until after first paint.",
+      "\t\tPolymer.RenderStatus.afterNextRender(this, function() {",
+      "\t\t\t",
+      "\t\t});",
       "\t}",
       "",
       "}",
@@ -91,9 +97,62 @@
       "ready() {",
       "\tsuper.ready();",
       "",
-      "\t$0",
+      "\t// When possible, use afterNextRender to defer non-critical",
+      "\t// work until after first paint.",
+      "\tPolymer.RenderStatus.afterNextRender(this, function() {",
+      "\t\t$0",
+      "\t});",
       "",
       "}"
+    ]
+  },
+  "Polymer DispatchEvent": {
+    "prefix": "p-dispatchevent",
+    "description": "Fire custom event",
+    "body": [
+      "this.dispatchEvent(new CustomEvent('$1', {",
+      "\tdetail: {", 
+      "\t\t$0",
+      "\t}",
+      "}));"
+    ]
+  },
+  "Polymer DispatchEvent Thought ShadowDOM": {
+    "prefix": "p-dispatchevent-composed",
+    "description": "Fire custom event throught shadow DOM boundaries",
+    "body": [
+      "this.dispatchEvent(new CustomEvent('$1', {",
+      "\tbubbles: true,",
+      "\tcomposed: true,",
+      "\tdetail: {", 
+      "\t\t$0",
+      "\t}",
+      "}));"
+    ]
+  },
+  "Polymer Decalre Property - Type and Default Value": {
+    "prefix": "p-property-basic",
+    "description": "Add property with type and default value.",
+    "body": [
+      "${1:PropertyName}: {",
+      "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
+      "\tvalue: ${3:boolean|number|string|function}",
+      "}"   
+    ]
+  },
+  "Polymer Declare Property - All Keys": {
+    "prefix": "p-property-all",
+    "description": "Add property with all keys",
+    "body": [
+      "${1:PropertyName}: {",
+      "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
+      "\tvalue: ${3:boolean|number|string|function},",
+      "\treflectToAttribute: ${4:boolean},",
+      "\treadOnly: ${5:boolean},",
+      "\tnotify: ${6:boolean},",
+      "\tcomputed: ${7:string},",
+      "\tobserver: ${8:string}",
+      "}"   
     ]
   }
 }
