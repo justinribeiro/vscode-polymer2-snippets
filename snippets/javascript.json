@@ -1,0 +1,99 @@
+{
+  "Polymer Custom Element": {
+    "prefix": "p-customelement",
+    "description": "Polymer custom element",
+    "body": [
+      "class ${1:Name}Element extends Polymer.Element {",
+      "",
+      "\tstatic get is() { return '${1:Name}-element'; }",
+      "",
+      "\tstatic get properties() {",
+      "\t\treturn {",
+      "\t\t\t$0",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tconstructor() {",
+      "\t\tsuper();",
+      "\t}",
+      "",
+      "\tready() {",
+      "\t\tsuper.ready();",
+      "\t}",
+      "",
+      "}",
+      "",
+      "window.customElements.define(${1:Name}Element.is, ${1:Name}Element);"
+    ]
+  },
+  "Polymer Observers": {
+    "prefix": "p-observers",
+    "description": "Polymer observers()",
+    "body": [
+      "static get observers() {",
+      "\treturn [",
+      "\t\t'$1Changed($0)'",
+      "\t];",
+      "}"
+    ]
+  },
+  "Polymer Constructor": {
+    "prefix": "p-lifecycle-constructor",
+    "description": "Polymer constructor()",
+    "body": [
+      "constructor() {",
+      "\tsuper();",
+      "",
+      "\t$0",
+      "",
+      "}"
+    ]
+  },
+  "Web Components v1 connectedCallback": {
+    "prefix": "p-lifecycle-connected",
+    "description": "Web Components v1 connectedCallback()",
+    "body": [
+      "connectedCallback() {",
+      "\tsuper.connectedCallback();",
+      "",
+      "\t$0",
+      "",
+      "}"
+    ]
+  },
+  "Web Components v1 disconnectedCallback": {
+    "prefix": "p-lifecycle-disconnected",
+    "description": "Web Components v1 disconnectedCallback ()",
+    "body": [
+      "disconnectedCallback() {",
+      "\tsuper.disconnectedCallback();",
+      "",
+      "\t$0",
+      "",
+      "}"
+    ]
+  },
+  "Web Components v1 attributeChangedCallback ": {
+    "prefix": "p-lifecycle-attrchanged",
+    "description": "Web Components v1 attributeChangedCallback()",
+    "body": [
+      "attributeChangedCallback(attrName, oldVal, newVal) {",
+      "",
+      "\t$0",
+      "",
+      "}"
+    ]
+  },
+  "Polymer ready": {
+    "prefix": "p-lifecycle-ready",
+    "description": "Polymer specific ready()",
+    "body": [
+      "ready() {",
+      "\tsuper.ready();",
+      "",
+      "\t$0",
+      "",
+      "}"
+    ]
+  }
+}

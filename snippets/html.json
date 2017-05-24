@@ -1,0 +1,71 @@
+{
+  "p-webcomponent": {
+    "prefix": "p-webcomponent",
+    "description": "Polymer web component",
+    "body": [
+      "<link rel=\"import\" href=\"../bower_components/polymer/polymer-element.html\">",
+      "",
+      "<dom-module id=\"${1:Name}-element\">",
+      "\t<template>",
+      "\t\t<style>",
+      "\t\t\t:host {",
+      "\t\t\t\tdisplay: block",
+      "\t\t\t}",
+      "\t\t</style>",
+      "",
+      "\t\t$0",
+      "",
+      "\t</template>",
+      "",
+      "\t<script>",
+      "\t\tclass ${1:Name}Element extends Polymer.Element {",
+      "",
+      "\t\t\tstatic get is() { return '${1:Name}-element'; }",
+      "",
+      "\t\t\tstatic get properties() {",
+      "\t\t\t\treturn {",
+      "\t\t\t\t\t",
+      "\t\t\t\t};",
+      "\t\t\t}",
+      "",
+      "\t\t\tconstructor() {",
+      "\t\t\t\tsuper();",
+      "\t\t\t}",
+      "",
+      "\t\t\tready() {",
+      "\t\t\t\tsuper.ready();",
+      "\t\t\t}",
+      "",
+      "\t\t}",
+      "",
+      "\t\twindow.customElements.define(${1:Name}Element.is, ${1:Name}Element);",
+      "\t</script>",
+      "</dom-module>"
+    ]
+  },
+  "p-slot": {
+    "prefix": "p-slot",
+    "description": "Add a Shadow DOM <slot>",
+    "body": [
+      "<slot name=\"$0\"></slot>"
+    ]
+  },
+  "p-dom-repeat-inside": {
+    "prefix": "p-dom-repeat-inside",
+    "description": "Add dom-repeat inside a Polymer element",
+    "body": [
+      "<template is=\"dom-repeat\" items=\"{{$1}}\" as=\"$0\">",
+      "",
+      "</template>"
+    ]
+  },
+  "p-dom-if": {
+    "prefix": "p-dom-if",
+    "description": "Add dom-if inside a Polymer element",
+    "body": [
+      "<template is=\"dom-if\" if=\"{{$0}}\">",
+      "",
+      "</template>"
+    ]
+  },
+}

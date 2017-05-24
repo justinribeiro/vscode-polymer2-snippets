@@ -1,0 +1,45 @@
+{
+    "name": "Polymer2Snippets",
+    "publisher": "justinribeiro",
+    "displayName": "Polymer 2 Snippets",
+    "description": "Polymer 2 snippets.",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "color": "#1e88e5",
+        "theme": "light"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/justinribeiro/vscode-polymer2-snippets.git"
+    },
+    "keywords" : [
+        "Polymer",
+        "Polymer 2",
+        "Web Components",
+        "JavaScript",
+        "HTML"
+    ],
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "devDependencies": {
+        "vscode": "^1.11.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}
