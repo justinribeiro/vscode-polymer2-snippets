@@ -134,6 +134,9 @@
     "prefix": "p-property-basic",
     "description": "Add property with type and default value.",
     "body": [
+      "/**",
+      " * ${4:Description for prop}",
+      " */",
       "${1:PropertyName}: {",
       "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
       "\tvalue: ${3:boolean|number|string|function}",
@@ -144,6 +147,9 @@
     "prefix": "p-property-all",
     "description": "Add property with all keys",
     "body": [
+      "/**",
+      " * ${9:Description for prop}",
+      " */",
       "${1:PropertyName}: {",
       "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
       "\tvalue: ${3:boolean|number|string|function},",

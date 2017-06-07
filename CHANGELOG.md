@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 0.0.3 (2017-06-07)
+- Added Snippets
+  - `p-mixin`                  - Boilerplate mixin class
+  - `p-mixin-dedup`            - Boilerplate mixin class utilizing Polymer.dedupingMixin()
+- Updated
+  - `p-property-basic` - added comment block for better Polymer IDE support
+  - `p-property-all` - added comment block for better Polymer IDE support
+  - `p-webcomponent` - added comment block for better Polymer IDE support
+
 ## 0.0.2 (2017-05-24)
 - Added Snippets
   - `p-dispatchevent`          -  Fire custom event with this.dispatchEvent();

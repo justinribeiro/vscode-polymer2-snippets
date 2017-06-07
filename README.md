@@ -22,7 +22,9 @@ p-property-all            // Polymer property with everything
 
 ### HTML Snippets
 ```html
-p-webcomponent            // Polymer Web Component
+p-webcomponent            // Boilerplate Polymer Web Component
+p-mixin                   // Boilerplate mixin class
+p-mixin-dedup             // Boilerplate mixin class utilizing Polymer.dedupingMixin()
 p-slot                    // <slot name="">
 p-dom-repeat-inside       // dom-repeat inside Polymer managed template
 p-dom-if                  // dom-if 

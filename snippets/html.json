@@ -5,6 +5,11 @@
     "body": [
       "<link rel=\"import\" href=\"../bower_components/polymer/polymer-element.html\">",
       "",
+      "<!--",
+      "`<${1:Name}>` is ${2:Description}",
+      "",
+      "@element ${1:Name}",
+      "-->",
       "<dom-module id=\"${1:Name}-element\">",
       "\t<template>",
       "\t\t<style>",
@@ -72,4 +77,54 @@
       "</template>"
     ]
   },
+  "p-mixin": {
+    "prefix": "p-mixin",
+    "description": "Create a mixin class.",
+    "body": [
+      "<script>",
+      "",
+      "\t/**",
+      "\t * ",
+      "\t * @summary ", 
+      "\t * @polymer ",
+      "\t * @mixinFunction",
+      "\t */",
+      "\tconst ${1:ClassName} = superclass => class extends superclass {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "</script>"
+    ]
+  },
+  "p-mixin-dedup": {
+    "prefix": "p-mixin-dedup",
+    "description": "Create a mixin class that utilizes Polymer.dedupingMixin()",
+    "body": [
+      "<link rel=\"import\" href=\"../bower_components/polymer/lib/utils/mixin.html\">",
+      "",
+      "<script>",
+      "(function() {",
+      "\t'use strict';",
+      "",
+      "\t/**",
+      "\t * ",
+      "\t * @summary ", 
+      "\t * @polymer ",
+      "\t * @mixinFunction",
+      "\t */",
+      "\t${1:ClassName} = Polymer.dedupingMixin(superClass => {",
+      "\t\t/**",
+      "\t\t * @polymerMixinClass",
+      "\t\t * @implements { }",
+      "\t\t */",
+      "\t\tclass ${1:ClassName} extends superClass {",
+      "\t\t\t$0",
+      "\t\t}",
+      "\t\treturn ${1:ClassName};",
+      "\t});",
+      "",
+      "})();",
+      "</script>"
+    ]
+  }
 }
