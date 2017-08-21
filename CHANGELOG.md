@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 0.0.4 (2017-08-21)
+- Updated
+  - `p-webcomponent`  - Now asks for LowerCaseDashedName and PascalCaseName (save on search/replace)
+  - `p-customelement` - Now asks for LowerCaseDashedName and PascalCaseName (save on search/replace)
+  - Added JSDoc style documentation for each item (lifecycle callbacks use descriptions use from https://developers.google.com/web/fundamentals/architecture/building-components/customelements?hl=en)
+
 ## 0.0.3 (2017-06-07)
 - Added Snippets
   - `p-mixin`                  - Boilerplate mixin class
