@@ -1,6 +1,11 @@
 # Polymer 2 Snippets for Visual Studio Code
 
-*WORK IN PROGRESS* This extension for Visual Studio Code adds snippets for Polymer 2 for JavaScript and HTML.
+This extension for Visual Studio Code adds snippets for Polymer 2 for JavaScript and HTML.
+
+[![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/justinribeiro.Polymer2Snippets.svg
+?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets)
+[![Current Release](http://vsmarketplacebadge.apphb.com/version/justinribeiro.Polymer2Snippets.svg
+?style=flat-square)](https://github.com/justinribeiro/vscode-polymer2-snippets/releases)
 
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -27,7 +32,7 @@ p-mixin                   // Boilerplate mixin class
 p-mixin-dedup             // Boilerplate mixin class utilizing Polymer.dedupingMixin()
 p-slot                    // <slot name="">
 p-dom-repeat-inside       // dom-repeat inside Polymer managed template
-p-dom-if                  // dom-if 
+p-dom-if                  // dom-if
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
