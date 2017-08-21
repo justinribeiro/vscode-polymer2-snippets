@@ -2,7 +2,7 @@
 
 This extension for Visual Studio Code adds snippets for Polymer 2 for JavaScript and HTML.
 
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets) [![Current Release](http://vsmarketplacebadge.apphb.com/version/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets) [![Current Release](https://vsmarketplacebadge.apphb.com/version/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets)
 
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
