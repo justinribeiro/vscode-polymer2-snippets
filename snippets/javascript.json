@@ -53,6 +53,27 @@
       "window.customElements.define(${1:PascalCaseName}.is, ${1:PascalCaseName});"
     ]
   },
+  "Polymer Hybrid Behaviors": {
+    "prefix": "p-hybridbehaviors",
+    "description": "Add hybrid behaviors to your class-style element",
+    "body": [
+      "Polymer.mixinBehaviors([$0], Polymer.Element)"
+    ]
+  },
+  "Polymer Properties": {
+    "prefix": "p-properties",
+    "description": "Polymer properties()",
+    "body": [
+      "/**",
+      "  * Object describing property-related metadata used by Polymer features",
+      "  */",
+      "static get properties() {",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
+      "}"
+    ]
+  },
   "Polymer Observers": {
     "prefix": "p-observers",
     "description": "Polymer observers()",
@@ -118,7 +139,7 @@
       "}"
     ]
   },
-  "Web Components v1 attributeChangedCallback ": {
+  "Web Components v1 attributeChangedCallback": {
     "prefix": "p-lifecycle-attrchanged",
     "description": "Web Components v1 attributeChangedCallback()",
     "body": [
@@ -140,7 +161,8 @@
     "description": "Polymer specific ready()",
     "body": [
       "/**",
-      " * Use for one-time configuration of your component after local DOM is initialized. ",
+      " * Use for one-time configuration of your component after local DOM is",
+      " * initialized.",
       " */",
       "ready() {",
       "\tsuper.ready();",
@@ -178,7 +200,7 @@
       "}));"
     ]
   },
-  "Polymer Decalre Property - Type and Default Value": {
+  "Polymer Declare Property - Type and Default Value": {
     "prefix": "p-property-basic",
     "description": "Add property with type and default value.",
     "body": [
@@ -187,8 +209,35 @@
       " */",
       "${1:PropertyName}: {",
       "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
-      "\tvalue: ${3:boolean|number|string|function}",
-      "}"
+      "\tvalue: ${3:boolean|number|string|function},",
+      "},"
+    ]
+  },
+  "Polymer Declare Property - Type, Default Value, Observer": {
+    "prefix": "p-property-observer",
+    "description": "Add property with type, default value, and observer.",
+    "body": [
+      "/**",
+      " * ${5:Description for prop}",
+      " */",
+      "${1:PropertyName}: {",
+      "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
+      "\tvalue: ${3:boolean|number|string|function},",
+      "\tobserver: '${4:string}',",
+      "},"
+    ]
+  },
+  "Polymer Declare Property - Typem Computed": {
+    "prefix": "p-property-computed",
+    "description": "Add property with type and computed.",
+    "body": [
+      "/**",
+      " * ${5:Description for prop}",
+      " */",
+      "${1:PropertyName}: {",
+      "\ttype: ${2:Boolean|Date|Number|String|Array|Object},",
+      "\tcomputed: '${4:string}',",
+      "},"
     ]
   },
   "Polymer Declare Property - All Keys": {
@@ -205,8 +254,8 @@
       "\treadOnly: ${5:boolean},",
       "\tnotify: ${6:boolean},",
       "\tcomputed: ${7:string},",
-      "\tobserver: ${8:string}",
-      "}"
+      "\tobserver: ${8:string},",
+      "},"
     ]
   }
 }

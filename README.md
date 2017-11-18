@@ -10,6 +10,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 ### JavaScript Snippets
 ```javascript
 p-customelement           // Polymer Custom Element
+p-hybridbehaviors         // Polymer.mixinBehaviors()
 p-lifecycle-constructor   // constructor()
 p-lifecycle-connected     // connectedCallback()
 p-lifecycle-disconnected  // disconnectedCallback()
@@ -18,7 +19,10 @@ p-lifecycle-ready         // Polymer specific ready()
 p-dispatchevent           // Fire custom event with this.dispatchEvent();
 p-dispatchevent-composed  // Fire custom event through ShadowDOM
 p-observers               // Polymer static get observers()
+p-properties              // Polymer static get properties()
 p-property-basic          // Polymer property w/type + default value
+p-property-observer       // Polymer property w/type + default value + observer
+p-property-computed       // Polymer property w/type + computed
 p-property-all            // Polymer property with everything
 ```
 

@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 0.1.0 (2017-11-17)
+- Added Snippets
+  - `p-hybridbehaviors` - Polymer.mixinBehaviors()
+  - `p-properties` - Polymer static get properties()
+  - `p-property-observer` - Polymer property w/type + default value + observer
+  - `p-property-computed` - Polymer property w/type + computed
+- Updated
+  - `p-mixin-dedup` - Added Namespace definition to match revised Polymer documentation
+  - Minor spacing fixes, add trailing commas on properties
+
 ## 0.0.4 (2017-08-21)
 - Updated
   - `p-webcomponent`  - Now asks for LowerCaseDashedName and PascalCaseName (save on search/replace)
