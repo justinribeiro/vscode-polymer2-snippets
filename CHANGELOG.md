@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 1.0.0 (2018-05-18)
+- Added Snippets
+  - `p-polymer-element` - Polymer 3 Web Component defintion
+  - `p-lit-element` - Lit-Element Web Component definition
+  - `p-mixin` - ES6 arrow function subclass return
+  - `p-mixin-dedup` - Sharable mixin utilizing Polymer's dedupingMixin
+- Breaking
+  - `p-polymer-customelement` - Removed (out of date)
+
 ## 0.1.0 (2017-11-17)
 - Added Snippets
   - `p-hybridbehaviors` - Polymer.mixinBehaviors()

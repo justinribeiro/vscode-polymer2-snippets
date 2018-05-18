@@ -1,8 +1,8 @@
 {
     "name": "Polymer2Snippets",
     "publisher": "justinribeiro",
-    "displayName": "Polymer 2 Snippets",
-    "description": "Build Polymer 2 web components faster with the power of snippets!",
+    "displayName": "Polymer v2/v3 Snippets",
+    "description": "Build Polymer 2 and Polymer 3 web components faster with the power of snippets!",
     "icon": "images/logo.png",
     "galleryBanner": {
         "color": "#1e88e5",
@@ -16,16 +16,17 @@
     "keywords" : [
         "Polymer",
         "Polymer 2",
+        "Polymer 3",
         "Web Components",
         "JavaScript",
         "HTML"
     ],
-    "version": "0.1.1",
+    "version": "1.0.0",
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.20.0"
     },
     "devDependencies": {
-        "vscode": "^1.11.0"
+        "vscode": "^1.20.0"
     },
     "categories": [
         "Snippets"
