@@ -327,5 +327,111 @@
       "",
       "export const ${1:MixinNamePascelCase} = dedupingMixin(internal${1:MixinNamePascelCase})"
     ]
+  },
+  "Polymer template()": {
+    "prefix": "p-template",
+    "description": "Define Polymer element template",
+    "body": [
+      "static get template() {",
+      "\treturn html`",
+      "\t\t${1:template}",
+      "\t`;",
+      "}"
+    ]
+  },
+  "LitElement": {
+    "prefix": "l-element",
+    "description": "LitElement web component extended from lit-html",
+    "body": [
+      "import {LitElement, html} from '@polymer/lit-element';",
+      "",
+      "/**",
+      " * `${2:LowerCaseDashedName}` ${3:Description}",
+      " *",
+      " * @customElement",
+      " * @polymer",
+      " * @demo",
+      " * ",
+      " */",
+      "class ${1:PascalCaseName} extends LitElement {",
+      "\tstatic get properties() {",
+      "\t\treturn {",
+      "",
+      "\t\t}",
+      "\t}",
+      "",
+      "\t/**",
+      "\t * Implement to describe the element's DOM using lit-html.",
+      "\t * Use the element current props to return a lit-html template result",
+      "\t * to render into the element.",
+      "\t */",
+      "\t_render({}) {",
+      "\t\treturn html`",
+      "",
+      "\t\t`;",
+      "\t}",
+      "",
+      "\t/**",
+      "\t * Instance of the element is created/upgraded. Use: initializing state,",
+      "\t * set up event listeners, create shadow dom.",
+      "\t * @constructor",
+      "\t */",
+      "\tconstructor() {",
+      "\t\tsuper();",
+      "\t}",
+      "",
+      "}",
+      "",
+      "customElements.define('${2:LowerCaseDashedName}', ${1:PascalCaseName});"
+    ]
+  },
+  "LitElement _render() html": {
+    "prefix": "l-render-html",
+    "description": "Implement to describe the element's DOM using lit-html",
+    "body": [
+      "_render({${1:props}}) {",
+      "\treturn html`",
+      "\t\t${2:template}",
+      "\t`;",
+      "}"
+    ]
+  },
+  "LitElement _render() svg": {
+    "prefix": "l-render-svg",
+    "description": "Implement to create partial SVG templates (render inside <svg> tag)",
+    "body": [
+      "_render({${1:props}}) {",
+      "\treturn svg`",
+      "\t\t${2:template}",
+      "\t`;",
+      "}"
+    ]
+  },
+  "LitElement _firstRendered()": {
+    "prefix": "l-firstRendered",
+    "description": "Called after the element DOM is rendered for the first time.",
+    "body": [
+      "_firstRendered() {",
+      "\t${2:yourLogic}",
+      "}"
+    ]
+  },
+  "LitElement _createRoot()": {
+    "prefix": "l-createRoot",
+    "description": "Implement to customize where the element's template is rendered by returning an element into which to render. By default this creates a shadowRoot for the element. To render into the element's childNodes, return this.",
+    "body": [
+      "_firstRendered() {",
+      "\t${2:yourLogic}",
+      "}"
+    ]
+  },
+  "LitElement _didRender()": {
+    "prefix": "l-didRender",
+    "description": "Called after element DOM has been rendered. Implement to directly control rendered DOM. Typically this is not needed as lit-html can be used in the _render method to set properties, attributes, and event listeners. However, it is sometimes useful for calling methods on rendered elements, for example focusing an input: this.shadowRoot.querySelector('input').focus().",
+    "body": [
+      "_didRender(props, changedProps, prevProps) {",
+      "\t${2:yourLogic}",
+      "}"
+    ]
   }
 }

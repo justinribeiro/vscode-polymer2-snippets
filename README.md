@@ -10,7 +10,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 ### JavaScript Snippets
 ```javascript
 p-polymer-element         // Polymer 3 Web Component defintion
-p-lit-element             // Lit-Element Web Component definition
+p-lit-element             // LitElement Web Component definition
 p-hybridbehaviors         // Polymer.mixinBehaviors()
 p-lifecycle-constructor   // constructor()
 p-lifecycle-connected     // connectedCallback()
@@ -27,6 +27,12 @@ p-property-computed       // Polymer property w/type + computed
 p-property-all            // Polymer property with everything
 p-mixin                   // ES6 arrow function subclass return
 p-mixin-dedup             // Sharable mixin utilizing Polymer's dedupingMixin
+l-element                 // LitElement Web Component definition (alias p-lit-element)
+l-render-html             // LitElement _render() with html``
+l-render-svg              // LitElement _render() with svg``
+l-firstRendered           // LitElement _firstRender()
+l-createRoot              // LitElement _createRoot()
+l-didRender               // LitElement _didRender()
 ```
 
 ### HTML Snippets
