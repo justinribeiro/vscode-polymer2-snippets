@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 2.0.0 (2019-09-23)
+- Added Snippets
+  - `l-properties` - Lit-Element properties by implementing a static properties getter
+  - `l-get-styles` - Lit-Element styles in a static styles property
+  - `l-get-styles-super` - Lit-Element static styles property with super class
+  - `l-firstUpdated` - Lit-Element firstUpdated()
+  - `l-shouldUpdate` - Lit-Element shouldUpdate()
+  - `l-requestUpdate` - Lit-Element requestUpdate()
+  - `l-updateComplete` - Lit-Element `await this.updateComplete;`
+  -
+- Breaking
+  - `p-polymer-customelement` - Removed (out of date)
+
 ## 1.0.0 (2018-05-18)
 - Added Snippets
   - `p-polymer-element` - Polymer 3 Web Component defintion

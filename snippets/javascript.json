@@ -73,7 +73,7 @@
       "\t * Use the element current props to return a lit-html template result",
       "\t * to render into the element.",
       "\t */",
-      "\t_render({}) {",
+      "\trender() {",
       "\t\treturn html`",
       "",
       "\t\t`;",
@@ -360,12 +360,19 @@
       "\t\t}",
       "\t}",
       "",
+      "\tstatic get styles() {",
+      "\t\treturn [",
+      "\t\t\tsuper.styles,",
+      "\t\t\tcss``,",
+      "\t\t];",
+      "\t}",
+      "",
       "\t/**",
       "\t * Implement to describe the element's DOM using lit-html.",
       "\t * Use the element current props to return a lit-html template result",
       "\t * to render into the element.",
       "\t */",
-      "\t_render({}) {",
+      "\trender() {",
       "\t\treturn html`",
       "",
       "\t\t`;",
@@ -385,53 +392,95 @@
       "customElements.define('${2:LowerCaseDashedName}', ${1:PascalCaseName});"
     ]
   },
-  "LitElement _render() html": {
+  "LitElement Properties": {
+    "prefix": "l-properties",
+    "description": "Declare your element’s properties by implementing a static properties getter",
+    "body": [
+      "/**",
+      "  * Declared properties and their corresponding attributes",
+      "  */",
+      "static get properties() {",
+      "\treturn {",
+      "\t\t$0",
+      "\t};",
+      "}"
+    ]
+  },
+  "LitElement get styles()": {
+    "prefix": "l-get-styles",
+    "description": "Define styles in a static styles property.",
+    "body": [
+      "static get styles() {",
+      "\treturn css`",
+      "\t`",
+      "}"
+    ]
+  },
+  "LitElement get styles() with super": {
+    "prefix": "l-get-styles-super",
+    "description": "Define styles in a static styles property with super class.",
+    "body": [
+      "static get styles() {",
+      "\treturn [",
+      "\t\tsuper.styles,",
+      "\t\tcss`",
+      "\t\t`",
+      "\t\"];",
+      "}"
+    ]
+  },
+  "LitElement render() html": {
     "prefix": "l-render-html",
     "description": "Implement to describe the element's DOM using lit-html",
     "body": [
-      "_render({${1:props}}) {",
+      "render() {",
       "\treturn html`",
       "\t\t${2:template}",
       "\t`;",
       "}"
     ]
   },
-  "LitElement _render() svg": {
+  "LitElement render() svg": {
     "prefix": "l-render-svg",
     "description": "Implement to create partial SVG templates (render inside <svg> tag)",
     "body": [
-      "_render({${1:props}}) {",
+      "render() {",
       "\treturn svg`",
       "\t\t${2:template}",
       "\t`;",
       "}"
     ]
   },
-  "LitElement _firstRendered()": {
-    "prefix": "l-firstRendered",
-    "description": "Called after the element DOM is rendered for the first time.",
+  "LitElement firstUpdated()": {
+    "prefix": "l-firstUpdated",
+    "description": "Called after the element’s DOM has been updated the first time, immediately before updated is called.",
     "body": [
-      "_firstRendered() {",
+      "firstUpdated() {",
       "\t${2:yourLogic}",
       "}"
     ]
   },
-  "LitElement _createRoot()": {
-    "prefix": "l-createRoot",
-    "description": "Implement to customize where the element's template is rendered by returning an element into which to render. By default this creates a shadowRoot for the element. To render into the element's childNodes, return this.",
+  "LitElement shouldUpdate()": {
+    "prefix": "",
+    "description": "Controls whether an update should proceed. Implement shouldUpdate to specify which property changes should cause updates. By default, this method always returns true.",
     "body": [
-      "_firstRendered() {",
+      "shouldUpdate(changedProperties) {",
       "\t${2:yourLogic}",
       "}"
     ]
   },
-  "LitElement _didRender()": {
-    "prefix": "l-didRender",
-    "description": "Called after element DOM has been rendered. Implement to directly control rendered DOM. Typically this is not needed as lit-html can be used in the _render method to set properties, attributes, and event listeners. However, it is sometimes useful for calling methods on rendered elements, for example focusing an input: this.shadowRoot.querySelector('input').focus().",
+  "LitElement requestUpdate()": {
+    "prefix": "l-requestUpdate",
+    "description": "f hasChanged returned true, requestUpdate fires, and the update proceeds. To manually start an element update, call requestUpdate with no parameters.",
     "body": [
-      "_didRender(props, changedProps, prevProps) {",
-      "\t${2:yourLogic}",
-      "}"
+      "this.requestUpdate();"
+    ]
+  },
+  "LitElement updateComplete": {
+    "prefix": "l-updateComplete",
+    "description": "The updateComplete Promise resolves when the element has finished updating. Use updateComplete to wait for an update:",
+    "body": [
+      "await this.updateComplete;"
     ]
   }
 }
