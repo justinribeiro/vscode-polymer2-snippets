@@ -1,6 +1,6 @@
-# Polymer v2 and v3 Snippets for Visual Studio Code
+# LitElement, Polymer v2 / v3, and Web Components  Snippets for Visual Studio Code
 
-This extension for Visual Studio Code adds snippets for Polymer versions 2 and 3 for JavaScript and HTML.
+This extension for Visual Studio Code adds snippets for LitElement and Polymer v2/v3 for JavaScript and HTML.
 
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets) [![Current Release](https://vsmarketplacebadge.apphb.com/version/justinribeiro.Polymer2Snippets.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=justinribeiro.Polymer2Snippets)
 
