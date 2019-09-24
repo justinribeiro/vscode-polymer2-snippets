@@ -10,9 +10,6 @@ All notable changes to the "vscode-polymer2-snippets" extension will be document
   - `l-shouldUpdate` - Lit-Element shouldUpdate()
   - `l-requestUpdate` - Lit-Element requestUpdate()
   - `l-updateComplete` - Lit-Element `await this.updateComplete;`
-  -
-- Breaking
-  - `p-polymer-customelement` - Removed (out of date)
 
 ## 1.0.0 (2018-05-18)
 - Added Snippets
