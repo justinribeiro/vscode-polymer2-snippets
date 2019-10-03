@@ -2,7 +2,7 @@
     "name": "Polymer2Snippets",
     "publisher": "justinribeiro",
     "displayName": "LitElement and Polymer v2/v3 Snippets",
-    "description": "Build LitElement, Polymer 2, and Polymer 3, and vanilla web components faster with the power of snippets!",
+    "description": "Build LitElement, Polymer 2/3, and vanilla web components faster with the power of snippets!",
     "icon": "images/logo.png",
     "galleryBanner": {
         "color": "#1e88e5",
