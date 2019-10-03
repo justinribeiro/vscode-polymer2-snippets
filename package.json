@@ -13,14 +13,14 @@
         "type": "git",
         "url": "https://github.com/justinribeiro/vscode-polymer2-snippets.git"
     },
-    "keywords" : [
+    "keywords": [
         "Polymer",
         "LitHTML",
         "Web Components",
         "JavaScript",
         "HTML"
     ],
-    "version": "2.0.0",
+    "version": "2.0.1",
     "engines": {
         "vscode": "^1.20.0"
     },

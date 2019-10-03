@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the "vscode-polymer2-snippets" extension will be documented in this file.
 
+## 2.0.1 (2019-10-02)
+- Revise bad import reference in LitElement snippet
+
 ## 2.0.0 (2019-09-23)
 - Added Snippets
   - `l-properties` - Lit-Element properties by implementing a static properties getter
